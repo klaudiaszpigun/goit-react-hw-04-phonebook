@@ -82,13 +82,13 @@ export const App = () => {
   return (
     <div className="div">
       <div className="container">
-        <h1 className="heading">Phonebook</h1>
+        <h1>Phonebook</h1>
         <ContactForm
           saveName={saveToName}
           saveNumber={saveToNumber}
           saveState={saveToState}
         />
-        <h2 className="second-heading">Contacts</h2>
+        <h2>Contacts</h2>
         <Filter filter={filterEvent} />
         <ContactList contacts={filteredContacts} deleteEvent={deleteContact} />
       </div>
