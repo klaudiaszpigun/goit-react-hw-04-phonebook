@@ -1,3 +1,4 @@
+import '../index.css';
 export const ContactForm = ({ saveName, saveNumber, saveState }) => {
   const handleSubmit = event => {
     event.preventDefault();
@@ -5,9 +6,10 @@ export const ContactForm = ({ saveName, saveNumber, saveState }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <p>Name</p>
       <input
+        className="input"
         type="text"
         name="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' \\-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -15,8 +17,9 @@ export const ContactForm = ({ saveName, saveNumber, saveState }) => {
         onChange={saveName}
         required
       />
-      <p>Number</p>
+      <p className="paragraph">Number</p>
       <input
+        className="input"
         type="tel"
         name="number"
         pattern="\\+?\\d{1,4}?[ .\\-\\s]?\\(?\\d{1,3}?\\)?[ .\\-\\s]?\\d{1,4}[ .\\-\\s]?\\d{1,4}[ .\\-\\s]?\\d{1,9}"
@@ -24,7 +27,9 @@ export const ContactForm = ({ saveName, saveNumber, saveState }) => {
         onChange={saveNumber}
         required
       />
-      <button type="submit">Add Contact</button>
+      <button className="submit-button" type="submit">
+        Add Contact
+      </button>
     </form>
   );
 };
