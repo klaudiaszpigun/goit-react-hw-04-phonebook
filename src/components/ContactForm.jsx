@@ -29,7 +29,7 @@ export const ContactForm = ({ saveName, saveNumber, saveState }) => {
           required
         />
       </div>
-      <div className="form-container-button">
+      <div>
         <button className="submit-button" type="submit">
           Add Contact
         </button>
