@@ -47,7 +47,7 @@ body {
 }
 
 .delete-button {
-  padding: 15px 30px;
+  padding: 5px 10px;
   border-radius: 15px;
   border: none;
   transition: background-color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
@@ -63,4 +63,28 @@ body {
 
 .input {
   height: 20px;
+  border-radius: 15px;
+  border: solid 1px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  row-gap: 60px;
+  column-gap: 40px;
 }

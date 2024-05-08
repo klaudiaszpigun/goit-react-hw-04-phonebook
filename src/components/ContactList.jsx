@@ -5,8 +5,9 @@ export const ContactList = ({ contacts, deleteEvent }) => {
       {contacts.map(contact => {
         return (
           <li className="list-item" key={contact.id}>
-            <span>{contact.name}: </span>
-            <span>{contact.number}</span>
+            <span>
+              {contact.name}: {contact.number}
+            </span>
             <button
               className="delete-button"
               type="button"
