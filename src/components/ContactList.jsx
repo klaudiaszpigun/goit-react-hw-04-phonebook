@@ -18,6 +18,6 @@ export const ContactList = ({ contacts, deleteEvent }) => {
           </li>
         );
       })}
-    </ul> //
+    </ul>
   );
 };
