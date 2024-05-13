@@ -16,7 +16,7 @@ export const ContactList = ({ contacts, deleteEvent }) => {
               Delete
             </button>
           </li>
-        );
+        ); //
       })}
     </ul>
   );
